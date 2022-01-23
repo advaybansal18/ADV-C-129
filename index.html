@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>C79-80</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="main.js"></script>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  
 </head>
-<body>
+<body background="background.jpg">
 <center>
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	List of the students in my class
-</h3>
+  	<h3 class="btn btn-warning heading">AI DJ WEB APP
+	    <br>
+	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume
+			 Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
 
-<div id="rows">
-<span>1</span>
-<input type="text" placeholder="Name of the Student" id="name_of_the_student_1">
-<br>
+	<div class="div_speed">
+		<img src="disk.gif" class="div_speed_img">
+		<br>
+		<h3 class="btn btn-danger" id="speed">Speed</h3>
+	</div>
 
-<span>2</span>
-<input type="text" placeholder="Name of the Student" id="name_of_the_student_2">
-<br>
+	<div class="div_volume">
+		<img src="disk.gif" class="div_volume_img">
+		<br>
+		<h3 class="btn btn-danger" id="volume">Volume</h3>
+	</div>
 
-<span>3</span>
-<input type="text" placeholder="Name of the Student" id="name_of_the_student_3">
-<br>
+	<br><br>
 
-<span>4</span>
-<input type="text" placeholder="Name of the Student" id="name_of_the_student_4">
-</div>
+	<button onclick="play();" class="btn btn-success play_button">Play</button>
 
-<button onclick="submit()" id="submit_button">
-	Submit
-</button>
-
-<div id="display_name_with_commas">
-</div>
-
-<hr>
-
-<div id="display_name_without_commas">
-</div>
-
-
-<button onclick="sorting()" id="sort_button">
-	Sort
-</button>
 </center>
 
-</script>
+<script src="main.js"></script>
 </body>
 </html>

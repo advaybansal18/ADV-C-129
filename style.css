@@ -1,33 +1,54 @@
-#submit_button
+.heading
 {
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+  width: 100%;
+  margin: 0px;
+  font-size: 25px;
+  
 }
-#sort_button
+.note
 {
-	display: none;
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+  font-size: 15px;
+  color: blue;
 }
-
-input
+body
 {
-	margin: 10px;
+  background-size: cover;	
 }
-#display_name_with_commas
-{
-	border: 1px solid green;
-    padding: 10px;
-	background-color: rgb(77, 60, 228);
-	border-radius: 10px;
-    width: 50%;
-}
-
-#display_name_without_commas
-{
-	border: 1px solid red;
-    padding: 10px;
-    background-color: rgb(230, 159, 180);
-	border-radius: 10px;
-    width: 50%;
-}
+  .div_speed
+  {
+  	float: left;
+  }
+  .div_speed_img
+  {
+  	width: 200px; 
+  	border-radius: 100px;
+  }
+  #speed
+  {
+  	font-size: 23px;
+  	margin: 15px;
+  }
+  .div_volume
+  {
+  	float: right;	
+  }
+  .div_volume_img
+  {
+  	width: 200px; 
+  	border-radius: 100px;
+  }
+  #volume
+  {
+  	font-size: 23px;
+  	margin: 15px;
+  }
+   .play_button
+  {
+  	width: 150px;
+  	font-size: 25px;
+  }
+    canvas 
+  {
+    border:5px solid whitesmoke;
+    border-radius:20px;
+  }
